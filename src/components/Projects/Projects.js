@@ -5,7 +5,6 @@ import gofish from '../../img/gofish.png'
 import spaced from '../../img/spaced.png'
 import cuppr from '../../img/cuppr.png'
 
-The description for each project should explain what the app does, who it's for, and why you built it
 export default function Projects(props) {
   const projectsArr = props.projects || [{
     title: 'GoFish.io',
