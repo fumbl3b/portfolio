@@ -34,7 +34,7 @@ export default class Block extends React.Component {
     const Title = styled.h1`
       text-align: center;
       &:hover {
-        color: white;
+        color: orange;
       }
     `;
 
@@ -43,6 +43,7 @@ export default class Block extends React.Component {
       color: red;
       background-color: yellow;
       animation-duration: 4s;
+      min-width: 360px;
       max-width: 20vw;
       min-height: 200px;
       display: block;

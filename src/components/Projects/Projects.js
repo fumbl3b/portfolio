@@ -13,19 +13,19 @@ export default function Projects(props) {
   },
   {
     title: 'Spaced Repetition',
-    description: 'A multiplayer go fish simulator that runs entirely in the browser. Built alongside 4 other new web developers.  Utilizes  React, Socket.io, Node, and PostgreSQL',
+    description: 'A memory aid that allows users to log in and quiz themselves with vocabulary from different languages.  Built with React, Node, Express, and PostgreSQL',
     img: '../img/test.jpg',
-    liveLink: 'https://gofish-team2.vercel.app/',
-    gitHubURL: 'https://github.com/thinkful-ei-rabbit/capstone-three-client-team-b',
-    apiURL:'https://github.com/thinkful-ei-rabbit/capstone-three-server-team-b'
+    liveLink: 'https://spaced-repetition-jade.vercel.app/',
+    gitHubURL: 'https://github.com/fumbl3b/spaced-repetition-capstone/tree/main/spaced-repetition',
+    apiURL:'https://github.com/fumbl3b/spaced-repetition-capstone/tree/main/spaced-repetition-api'
   },
   {
     title: 'CuppR',
-    description: 'A multiplayer go fish simulator that runs entirely in the browser. Built alongside 4 other new web developers.  Utilizes  React, Socket.io, Node, and PostgreSQL',
+    description: `CuppR is an anonymous coffee review aggregator. If you drink coffee, we're pretty sure you've got an opinion on it. Share that opinion here! Built with React, Node, Express, PostgreSQL, and lots of coffee.`,
     img: '../img/test.jpg',
-    liveLink: 'https://gofish-team2.vercel.app/',
-    gitHubURL: 'https://github.com/thinkful-ei-rabbit/capstone-three-client-team-b',
-    apiURL:'https://github.com/thinkful-ei-rabbit/capstone-three-server-team-b'
+    liveLink: 'https://cuppr-client.vercel.app/',
+    gitHubURL: 'https://github.com/fumbl3b/cuppr-client',
+    apiURL: 'https://github.com/fumbl3b/cuppr-api'
   }
 ];
 
@@ -33,7 +33,7 @@ export default function Projects(props) {
       background-color: red;
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       border-radius: 7px;
     `;
   return (
