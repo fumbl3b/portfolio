@@ -55,8 +55,9 @@ class App extends React.Component {
           </Section>
           <h3 style={{ color: 'yellowgreen' }}>About Me</h3>
           <Section id='about_me'>
-            <p>After spending almost a decade honing the processes of sourcing, roasting, and delivering high quality coffee to customers and cafes across the country, I'm focusing now on building web applications and systems that solve real problems.</p>
-            <p>I love working on projects leverage our interconnected world to affect real change, and I love creating suprising experiences.  Sometimes conventions are meant to be broken !</p>
+            <p>After spending almost a decade honing the processes of sourcing, roasting, and delivering high-quality coffee to customers and cafes across the country, I'm focusing now on building web applications and systems that solve real problems.</p>
+            <p>I love working on projects to leverage our interconnected world to affect real change, and I love creating surprising experiences.  Sometimes conventions are meant to be broken!</p>
+            <p>I have passion for web development, love working with other developers, and spend my time outside of coding working on artwork and coffee experiences.</p>
           </Section>
           <h3 style={{ color: 'orange' }}>Projects</h3>
           <Section id='projects'>

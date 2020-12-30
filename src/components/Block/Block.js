@@ -59,7 +59,9 @@ export default class Block extends React.Component {
       <Block onClick={this.handleExpand}>
         <Title>{flower +'    '+ this.props.title +'    '+ flower}</Title>
         {this.state.expand && (<>
+        <img style={{ width: 150 }} src={this.props.img} alt={'screenshot of app'} />
           <p style={{ fontSize: 18 }}>{this.props.expandContent}</p>
+          <p>{this.props.techStack}</p>
           <ul>
           <li><a href={this.props.liveLink}>live app</a></li>
           <li><a href={this.props.gitHubURL}>client</a></li>          
