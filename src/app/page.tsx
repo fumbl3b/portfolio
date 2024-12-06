@@ -1,5 +1,6 @@
 // src/app/page.tsx
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -42,6 +43,13 @@ export default function Home() {
           >
             LinkedIn
           </a>
+        </div>
+
+        {/* Link to Gallery */}
+        <div>
+          <Link href="/gallery" className="text-blue-600 hover:underline">
+            View Gallery
+          </Link>
         </div>
       </div>
     </div>
