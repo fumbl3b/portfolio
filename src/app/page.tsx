@@ -45,10 +45,13 @@ export default function Home() {
           </a>
         </div>
 
-        {/* Link to Gallery */}
-        <div>
+        {/* Links to other pages */}
+        <div className="space-y-2">
           <Link href="/gallery" className="text-blue-600 hover:underline">
             View Gallery
+          </Link>
+          <Link href="/toy" className="text-blue-600 hover:underline">
+            toy
           </Link>
         </div>
       </div>
