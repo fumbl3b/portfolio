@@ -18,14 +18,15 @@ export default function ToyScene() {
 }
 
 function Scene() {
-  const gridSize = 10
-  const spacing = 1.2
+  const gridSize = 30
+  const spacing = 2
   const baseSize = 1
 
   const buildings = useMemo(() => {
     const b = []
-    for (let i = 0; i < gridSize; i++) {
-      for (let j = 0; j < gridSize; j++) {
+    const halfGrid = gridSize / 2
+    for (let i = -halfGrid; i < halfGrid; i++) {
+      for (let j = -halfGrid; j < halfGrid; j++) {
         const height = Math.random() * 5 + 0.5
         b.push({ x: i * spacing, z: j * spacing, height })
       }
@@ -34,13 +35,13 @@ function Scene() {
   }, [gridSize, spacing])
 
   return (
-    <group position={[-(gridSize * spacing)/2, 0, -(gridSize * spacing)/2]}>
+    <group>
       <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
         <planeGeometry args={[100, 100]} />
         <meshStandardMaterial color="#4caf50" />
       </mesh>
       {buildings.map((b, idx) => (
-        <mesh key={idx} position={[b.x, b.height/2, b.z]} castShadow receiveShadow>
+        <mesh key={idx} position={[b.x, b.height / 2, b.z]} castShadow receiveShadow>
           <boxGeometry args={[baseSize, b.height, baseSize]} />
           <meshStandardMaterial color="#555" metalness={0.1} roughness={0.8} />
         </mesh>
